@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tasty Burger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 2rem;
+            color: #333;
+        }
+        
+        .burger-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 2rem;
+        }
+        
+        .burger-item {
+            width: 300px;
+            margin: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .burger-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .content {
+            padding: 1rem;
+        }
+        
+        .content img {
+            width: 50px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .content h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .content p {
+            font-size: 1rem;
+            color: #666;
+            text-align: justify;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #ff6f00;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .burger-item {
+                width: 100%;
+            }
+        }
+        
+        .order {
+            padding: 4rem;
+            background-color: #ff6f00;
+            color: #fff;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .heading span {
+            border-bottom: 3px solid #fff;
+            padding-bottom: 0.5rem;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        form {
+            flex: 1;
+        }
+        
+        .inputBox {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: none;
+            height: 100px;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #fff;
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #ff6f00;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Дәмді бургер мәзірі</h1>
+
+    <div class="burger-container">
+        <div class="burger-item">
+            <img class="image" src="classic burger.jpg">
+            <div class="content">
+                <h3>Классикалық бургер</h3>
+                <p>Салат, қызанақ, пияз және арнайы соус қосылған классикалық бургер.</p>
+                <a href="#order" class="btn">Тапсырыс беру</a>
+            </div>
+        </div>
+        <div class="burger-item">
+            <img class="image" src="spicy b.jpg">
+            <div class="content">
+                <h3>Ащы бургер</h3>
+                <p>Бұрыш ірімшігі және чипотл соусы бар ащы бургер.</p>
+                <a href="#order" class="btn">Тапсырыс беру</a>
+            </div>
+        </div>
+        <div class="burger-item">
+            <img class="image" src="Gourmet b.jpg">
+            <div class="content">
+                <h3>Гурман бургер</h3>
+                <p>Карамелденген пияз және бри ірімшігі қосылған дәмді бургер.</p>
+                <a href="#order" class="btn">Тапсырыс беру</a>
+            </div>
+        </div>
+        <div class="burger-item">
+            <img class="image" src="BBQ.jpg">
+            <div class="content">
+                <h3>BBQ Бургер</h3>
+                <p>Бекон, чеддар ірімшігі және қытырлақ пияз сақиналары бар BBQ бургері.</p>
+                <a href="#order" class="btn">Тапсырыс беру</a>
+            </div>
+        </div>
+        <div class="burger-item">
+            <img class="image" src="chicken.jpg">
+            <div class="content">
+                <h3>Тауық Бургер</h3>
+                <p>Салат, қызанақ және майонез қосылған дәмді тауық бургері.</p>
+                <a href="#order" class="btn">Тапсырыс беру</a>
+            </div>
+        </div>
+    </div>
+    <section class="order" id="order">
+
+        <h1 class="heading">Тапсырыс беру</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="order-img.png">
+            </div>
+            <form action="confirmation.html" method="get">
+                <div class="inputBox">
+                    <input type="text" placeholder="ФИО">
+                    <input type="email" placeholder="email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" placeholder="номер">
+                    <input type="text" placeholder="Тапсырыс атауы">
+                </div>
+
+                <textarea placeholder="Мекен жай" name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Тапсырыс беру" class="btn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body> 
+</html>

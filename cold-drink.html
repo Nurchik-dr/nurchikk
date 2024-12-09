@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .box {
+            width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .content img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        
+        h3 {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        p {
+            font-size: 14px;
+            color: #777;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 767px) {
+            .box {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #ff6f00;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .burger-item {
+                width: 100%;
+            }
+        }
+        
+        .order {
+            padding: 4rem;
+            background-color: #ff6f00;
+            color: #fff;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .heading span {
+            border-bottom: 3px solid #fff;
+            padding-bottom: 0.5rem;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        form {
+            flex: 1;
+        }
+        
+        .inputBox {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: none;
+            height: 100px;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #fff;
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #ff6f00;
+            color: #fff;
+        }
+    </style>
+</head>
+<div class="container">
+    <h1 class="heading">Біздің сусындар</h1>
+    <div class="box">
+        <img class="image" src="SL.jpg">
+        <div class="content">
+            <h3>Жазғы лимонад</h3>
+            <p>Жазғы лимонад - жаңа сығылған лимон шырыны, газдалған су және тәттілендіргіштен жасалған сергітетін және газдалған салқын сусын. Ол жаздың ыстық күндеріне өте ыңғайлы және қосымша көрнекі тартымдылық үшін оны лимон тілімімен безендірілген.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img class="image" src="IT.jpg">
+        <div class="content">
+            <h3>Iced Tea</h3>
+            <p>Iced Tea - шай жапырақтарын қайнатып, оны мұзбен салқындату арқылы жасалған классикалық салқын сусын. Сіз қара шай, жасыл шай немесе шөп шайы сияқты әртүрлі шай дәмін таңдай аласыз.</p>
+            <a href="#order" class="btn">Тапсырыс беру</a>
+        </div>
+    </div>
+    <div class="box">
+        <img class="image" src="WS.jpg">
+        <div class="content">
+            <h3>Қарбыз шырыны</h3>
+            <p>Қарбыз сусыны – қарбыз кесектерін мұзбен және аздап қантпен араластыру арқылы жасалған сергітетін және жемісті салқын сусын. Бұл ыстық күн үшін тамаша нұсқа, сонымен қатар қосымша дәм үшін жалбыз жапырақтары және лайм шырыны қосылған .</p>
+            <a href="#order" class="btn">Тапсырыс беру</a>
+        </div>
+    </div>
+    <div class="box">
+        <img class="image" src="CC.jpg">
+        <div class="content">
+            <h3>Салқын кофе</h3>
+            <p>Салқын кофе - қайнатылған кофе, сүт, мұз және қант немесе сироп сияқты тәттілендіргіштерден жасалған танымал суық сусын. Бұл сүйікті сусынының сергітетін және салқындатылған нұсқасын қалайтын кофе әуесқойлары үшін тамаша таңдау, сонымен қатар қосымша көңіл көтеру үшін кілегей немесе шоколад үгінділері қослыған.</p>
+            <a href="#order" class="btn">Тапсырыс беру</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="order" id="order">
+
+    <h1 class="heading">Тапсырыс беру</h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="order-img.png">
+        </div>
+        <form action="confirmation.html" method="get">
+            <div class="inputBox">
+                <input type="text" placeholder="ФИО">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="номер">
+                <input type="text" placeholder="тапсырыс атауы">
+            </div>
+
+            <textarea placeholder="мекен жай" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="тапсырыс беру" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+</body>
+
+</html>

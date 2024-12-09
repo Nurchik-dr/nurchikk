@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>  
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .box {
+            width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .content img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        
+        h3 {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        p {
+            font-size: 14px;
+            color: #777;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 767px) {
+            .box {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #ff6f00;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .burger-item {
+                width: 100%;
+            }
+        }
+        
+        .order {
+            padding: 4rem;
+            background-color: #ff6f00;
+            color: #fff;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .heading span {
+            border-bottom: 3px solid #fff;
+            padding-bottom: 0.5rem;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        form {
+            flex: 1;
+        }
+        
+        .inputBox {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: none;
+            height: 100px;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #fff;
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #ff6f00;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="specialty" id="specialty">
+        <h1 class="heading">Біздің тағамдар</h1>
+        <div class="container">
+            <div class="box">
+                <img class="image" src="AT.jpg" alt="">
+                <div class="content">
+                    <h3>Авокадо тосты</h3>
+                    <p>Тостталған тұтас бидай нанының үстіне авокадо пюресі жағып, үстіне пісірілген жұмыртқаны салып, тұз, бұрыш және қызыл бұрыш түйіршіктері себілген.</p>
+                    <a href="#order" class="btn">Тапсырыс беру</a>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="GYB.jpg" alt="">
+                <div class="content">
+                    <h3>Грек йогурты</h3>
+                    <p>Грек йогуртын балмен араластырылған және үстіне жаңа піскен жидектер, гранола және туралған жаңғақтар қосылған.</p>
+                    <a href="#order" class="btn">Тапсырыс беру</a>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="OF.jpg" alt="">
+                <div class="content">
+                    <h3>Жеміс қосылған сұлы жармасы</h3>
+                    <p>Кесілген сұлыны сумен және сүтпен пісірілген, кесілген банандарды, жидектерді және балдың тамшысы қосылған.</p>
+                    <a href="#order" class="btn">Тапсырыс беру</a>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="EVS.jpg" alt="">
+                <div class="content">
+                    <h3>Жұмыртқа араластырылған көкөніс</h3>
+                    <p>Жұмыртқаны туралған шпинатпен, болгар бұрышымен және пиязбен араластырып, тұтас бидай тостымен бірге жасалған.</p>
+                    <a href="#order" class="btn">Тапсырыс беру</a>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="SB.jpg" alt="">
+                <div class="content">
+                    <h3>Таңғы смузи</h3>
+                    <p>Мұздатылған жидектерді, бананды, грек йогуртын және бадам сүтін тегіс болғанша араластырған, үстіне туралған банан, гранола және чиа тұқымдары себілген.</p>
+                    <a href="#order" class="btn">Тапсырыс беру</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="order" id="order">
+
+        <h1 class="heading">Тапсырыс беру</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="order-img.png" alt="">
+            </div>
+            <form action="confirmation.html" method="get">
+                <div class="inputBox">
+                    <input type="text" placeholder="ФИО">
+                    <input type="email" placeholder="email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" placeholder="номер">
+                    <input type="text" placeholder="Тағам атауы">
+                </div>
+
+                <textarea placeholder="Мекен жай" name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Тапсырыс беру" class="btn">
+
+            </form>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
